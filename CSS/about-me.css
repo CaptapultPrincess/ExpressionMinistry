@@ -1,0 +1,32 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 9/28/25  
+	
+	The About Me CSS is used for the ministry html
+
+
+Main About Me Box*/
+.about-me-1{
+	width:100%;
+	height:500px;
+	text-align:center;
+	overflow:hidden;
+}
+
+/* Main Content formatting*/
+.about-me-box, .about-me-img{
+	text-align:left;
+	color:black;
+	width:60%;
+	font-size:clamp(6.5px, 2vw, 30px);
+	height:100%;
+	
+	overflow:hidden;
+	display:inline-block;
+	
+	margin-top:50px;
+	margin-left:50px;
+}
+
+.about-me-img{
+	width:30%;
+}

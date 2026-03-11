@@ -1,0 +1,128 @@
+h2{
+	padding-top:10px;
+}
+
+iframe{
+	width:100%;
+	height:100%;
+}
+
+video{
+	height:100%;
+}
+
+img{
+	width:auto;
+	height:100%;
+}
+
+.legacy-main{
+	width:100%;
+	height:600px;
+
+	display: grid;
+	grid-template-rows: auto auto auto auto 125px;
+	grid-template-columns: auto auto auto 250px;
+	align-items:center;
+	justify-items: center;
+	overflow:hidden;
+	gap:5px;
+	padding:15px;
+	box-sizing: border-box;
+	background-color:#0084C2;
+
+
+}
+
+.legacy-interact,.legacy-sections,.legacy-content{
+	border-radius:25px;
+	border-collapse:collaspe;
+	box-sizing: border-box;
+	width: 100%; 
+	height:100%;
+	overflow: hidden;
+	justify-items: center;
+	margin:5px;
+}
+
+.legacy-interact{
+	background-color:black;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start:1;
+	grid-row-end:5;
+}
+
+.legacy-content{
+	border-radius:0px;
+	border-top-right-radius:25px;
+	border-top-left-radius:25px;
+	margin-top:15px;
+	background-color:#FEF5F1;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start:1;
+	grid-row-end:5;
+	overflow:hidden;
+	position:relative;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.legacy-content-choose{
+	border: 1px solid black;
+	text-align:center;
+	width:200px;
+	width:100%;
+	height:100px;
+	font-size:15px;
+	overflow:hidden;
+	cursor:pointer;
+	
+}
+
+.legacy-content-choose:hover{
+	background-color:#FACEB8;
+}
+
+
+.legacy-sections{
+	border-radius:0px;
+	background-color:#0084C2;
+	border-top: 5px solid #004b6f;
+	
+	width:100%;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start:5;
+	grid-row-end:6;
+	text-align:center;
+	overflow-y:hidden;
+	overflow-x:scroll;
+	white-space: nowrap;
+}
+
+.legacy-sections-choose{
+	border-radius:25px;
+	display:inline-block;
+	width:250px;
+	height:90%;
+	background-color:#0084C2;
+	text-align:center;
+	font-size:25px;
+	margin:5px;
+	cursor:pointer;
+
+}
+
+.legacy-sections-choose:hover{
+	background-color:#009DE6;
+}
+.legacy-content-section{
+	display:none;
+}
+
+.legacy-content-section.active{
+	display:block;
+	width:100%;
+}

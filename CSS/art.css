@@ -1,0 +1,64 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 11/2/25  
+	
+	The Main CSS is used for all html for similar formatting and objects
+*/
+
+
+.art-box{
+	width:100%;
+	margin:15px;
+	text-align:center;
+}
+
+.art-piece{
+	width:350px;
+	height:350px;
+	object-fit: cover;
+	margin:20px;
+}
+
+.art-piece:hover{
+	filter: brightness(90%);
+}
+
+
+.display-box{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display:none;
+	z-index:1000
+}
+
+.display-piece{
+	text-align:center;
+	position: fixed;
+	opacity:1;
+	top: 10%; /* Aligns the top edge to the very top of the screen */
+	left: 50%; /* Moves the left edge to the horizontal midpoint */
+	transform: translateX(-50%);
+	height:500px;
+}
+
+.display-box.show{
+	display:block;
+}
+
+.exit-display{
+	background:transparent;
+	position:fixed;
+	top:0;
+	right:0;
+	width:50px;
+	margin:25px;
+	border:none;
+	cursor:pointer;
+}
+
+.exit-button{
+	width:100%;
+	height:100%;
+}

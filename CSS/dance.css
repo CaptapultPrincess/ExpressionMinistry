@@ -1,0 +1,92 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 9/28/25  
+	
+	The Home CSS is used for the homepage
+
+
+ Formatting for Video Scroll Description and more Info*/
+ .dance-collection{
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space: nowrap;
+	display:inline-block;
+	height:270px;
+	width:100%;
+ }
+ 
+ .dance-box{
+	width:300px;
+	height:170px;
+	border: 10px solid #004b6f;
+	padding:15px;
+	margin:15px;
+	display:inline-block;
+	/*overflow:hidden;*/
+
+ }
+ 
+ .dance-img{
+	background-color:orange;
+	width:100%;
+	height:100%;
+	z-index:-1;
+ }
+ 
+
+ 
+ .dance-button{
+	position:relative;
+	text-align:center;
+	background-color:#011f2d;
+	width:100%;
+	height:100%;
+	z-index:5;
+	margin-top:-58%;
+	opacity:0;
+	transition: opacity 0.6s ease;
+ }
+ 
+ .dance-play{
+	width:100px;
+	height:100px;
+	border: 5px solid white;
+	border-radius: 50%;
+	opacity:1;
+	cursor: pointer;
+	color:black;
+	align-self: flex-start;
+	overflow:hidden;
+	margin-top:13%;
+	transition: opacity 0.6s ease;
+	background-color:transparent;
+	background-image: url('../Images/play.png');
+	background-repeat:no-repeat;
+	background-position: center;
+	
+}
+
+.dance-play:active{
+	color:white;
+	background-color:grey;
+}
+
+.dance-button:hover{
+	opacity:0.5;
+	
+}
+
+
+/* Formatting for Video Display*/
+
+.video-box{
+	background-color:#011f2d;
+	width:100%;
+	height:100%;
+	text-align:center;
+	padding:15px;
+}
+
+.dance-video{
+	text-align:center;
+	width:80%;
+}

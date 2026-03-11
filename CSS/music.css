@@ -1,0 +1,310 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 9/28/25  
+	
+	The Home CSS is used for the homepage
+
+
+ Formatting for Album Description and more Info*/
+.album-grid {
+	border: solid 15px #004b6f;
+	display: grid;
+	/*grid-template-columns: 1fr 1fr 1fr;*/
+	grid-template-columns: repeat(autofit, 220px);
+	border-collapse:collaspe;
+	align-items:center;
+	justify-items: center;
+	overflow:hidden;
+	opacity:0;
+	height:0px;
+	color:black;
+}
+
+.album-grid.open{
+	opacity:1;
+	display:grid;
+	height:550px;
+	transition: height 0.6s ease;
+	
+} 
+
+.hide{
+	opacity:1;
+	display:block;
+	
+}
+.hide.now{
+	opacity:0;
+	display:none;
+}
+
+.album-information,.album-cover,.album-title-box,.album-btns,.album-list{
+	border-collapse:collaspe;
+	width: 100%; 
+	overflow: hidden; 
+	padding:5px;
+}
+
+
+.album-title-box{
+	height:150px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.album-btns{
+	height:250px;
+	background-color:#004b6f;
+}
+
+.album-information{
+	text-align:left;
+	grid-column-start: 2;
+	grid-column-end:3;
+	grid-row-start:2;
+	grid-row-end:4;
+	overflow:hidden;
+	height:100%;
+	width:500px;
+}
+
+
+.album-list{
+	font-size:18px;
+	padding:15px;
+	text-align:left;
+	margin-left:50px;
+	grid-column-start: 1;
+	grid-column-end:2;
+	grid-row-start:2;
+	grid-row-end:4;
+	overflow:hidden;
+	height:100%;
+	padding:0px;
+}
+
+.album-cover{
+	overflow:hidden;
+	height:350px;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start:1;
+	grid-row-end:3;
+	background-color:#004b6f;
+	padding-top:15px;
+}
+
+
+/*Formatting for data inside the grid*/
+
+.album-title{
+	margin:45px;
+	font-size:55px;
+}
+
+.album-desc{
+	padding:15px;
+	font-size:20px;
+}
+.album-cover-img{
+	width:350px;
+}
+
+.album-purchase{
+	background-color:#ffffff;/*#FA8C75;*/
+	width:90%;
+	height:100px;
+	padding:15px;
+	margin-top:15px;
+	font-size:25px;
+	/*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
+	border-color:black;
+	border-radius:5px;
+	cursor: pointer;
+}
+
+.album-purchase:hover{
+	background-color:#bd846a;
+}
+
+.album-listen{
+	margin-top:15px;
+	padding:15px;
+	width:100%;
+	margin-left:-15px;
+	width:350px;
+
+}
+
+/*Formatting for Album Covers*/
+.carousel{
+	text-align:center;
+}
+.carousel-content { 
+	padding:50px;
+	overflow: hidden; 
+	text-align:center;
+	display:block;
+	height:250px;
+	background-color: #FEF5F1;/*#faaf8c;*/
+	
+
+}
+.carousel-item {
+	position:absolute;
+	margin-left:900px;
+	border-radius:5px;
+	padding:5px;
+	background-color: #402206;
+	width:200px;
+	height:200px;
+	display:block;
+	opacity:0;
+	transition: margin-left 0.6s ease, block 0.6s ease;
+		
+}
+
+
+.carousel-item.active,.carousel-item.prev,.carousel-item.next{
+	opacity:1;
+	text-align:center;
+	display:inline-block;
+	transform: translateX(0%);
+	transition: margin-left 0.6s ease, width 0.6s ease, height 0.6s ease;
+}
+
+.carousel-item.active { 
+	width:250px;
+	height:250px;
+	margin-left:-140px;
+	z-index:4;
+}
+
+.carousel-item.next{
+	margin-left:250px;
+	width:200px;
+	height:200px;
+	z-index:5;
+}
+
+.carousel-item.prev {
+	z-index:5;
+	margin-left:-550px;
+	
+	width:200px;
+	height:200px;
+
+}
+
+.carousel-item.rear{
+	margin-left:-800px;
+}
+
+.carousel-item.head{
+	margin-left:900px;
+}
+
+.album-arrows{
+	padding:20px;
+	
+}
+
+.carousel-arrow{
+	width:150px;
+	height:50px;
+	transition: 0.6s ease;
+	background-color: #ffffff;
+	border: 5px solid #black;
+}
+
+.carousel-fade {
+  text-align:center;
+}
+
+
+.album-box{
+	overflow-x:scroll;
+	white-space: nowrap; 
+	padding:50px;
+}
+
+.album{
+	text-align:center;
+	border-radius:5px;
+	padding:2px;
+	margin-bottom:30px;
+	background-color: #402206;
+	width:250px;
+	height:250px;
+	display:inline-block;
+	margin-right:100px;
+	overflow:hidden;
+}
+
+
+.album-img{
+	border-radius:5px;
+	width:100%;
+	height:100%;
+	opacity:1;
+}
+
+
+.album-txt{
+	opacity:0;
+	/*
+	width:250px;
+	height:250px;*/
+	width:100%;
+	height:100%;
+	/*
+	margin-top:-250px;*/
+	margin-top:-102%;
+	overflow:hidden;
+	transition: opacity 0.6s ease;
+	background-color: rgba(255, 255, 255, 0.9); 
+	border-radius:5px;
+}
+
+
+
+.album-txt:hover{
+	opacity:0.9;
+}
+
+
+.album-btn{
+	width:100px;
+	height:50px;
+	opacity:1;
+	cursor: pointer;
+	color:black;
+	background-color: rgba(255, 255, 255, 1); 
+	
+}
+
+.album-btn:active{
+	color:white;
+	background-color:black;
+}
+
+
+.album-text{
+	border-radius:5px;
+	opacity:1;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30%;
+	margin-bottom:auto;
+}
+
+.albums{
+	overflow:hidden;
+	border-radius:5px;
+	padding:10px;
+	margin-bottom:30px;
+	background-color: #402206;
+	width:250px;
+	height:250px;
+	display:inline-block;
+	margin-right:30px;
+}

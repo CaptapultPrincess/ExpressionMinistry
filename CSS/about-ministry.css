@@ -1,0 +1,32 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 9/28/25  
+	
+	The About Ministry CSS is used for the ministry html
+
+
+Main Ministry Box*/
+.about-ministry-1{
+	width:100%;
+	height:500px;
+	text-align:center;
+	overflow:hidden;
+}
+
+/* Main Content formatting*/
+.about-ministry-box, .about-ministry-img{
+	text-align:center;
+	color:black;
+	width:60%;
+	font-size:clamp(6.5px, 3vw, 32px);
+	height:100%;
+	padding:5px;
+	
+	overflow:hidden;
+	display:inline-block;
+	
+	margin-top:50px;
+}
+
+.about-ministry-img{
+	width:30%;
+}

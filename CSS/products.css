@@ -1,0 +1,64 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 11/2/25  
+	
+	This CSS is only used for the products page
+*/
+
+.product-table-box, .table-desc-box {
+	padding:10px;
+	font-size:clamp(6.5px, 2vw, 20px);
+}
+
+.table-desc-box{
+	font-size:clamp(6.5px, 2vw, 30px);
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+p{
+	padding:15px;
+	border-radius:5px;
+}
+
+.product-display{
+	text-align:center;
+}
+
+.product-grid {
+	display: grid;
+	/*grid-template-columns: 1fr 1fr 1fr;*/
+	grid-template-columns: repeat(autofit, 220px);
+	border-collapse:collaspe;
+	align-items:center;
+	justify-items: center;
+	overflow:hidden;
+	gap:15px;
+	padding:5px;
+}
+
+.product-a{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	overflow:hidden;
+}
+
+.product-d{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	
+}
+
+.product-a,.product-b,.product-c,.product-d,.product-e,.product-f,.product-g,.product-h,.product-i,.product-j{
+	border: solid 0.5px black;
+	border-collapse:collaspe;
+	width: 100%; 
+	height: 500px;
+	overflow: hidden; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-img{
+	width:100%;
+	object-fit:cover;
+}

@@ -1,0 +1,17 @@
+/* Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 10/26/25  
+	
+	This page is used for formatting items only unique to the orders page.
+*/
+
+body{
+	text-align: center;
+	font-family:'Didact Gothic', sans-serif;
+	font-weight:500;
+	overflow-x:hidden;
+}
+
+input[type="email"]{
+	width:200px;
+}
+
