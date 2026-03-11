@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 10/26/25 -->
+
+
+<head>
+	<meta charset="utf-8" />
+	<title>Expression Ministry</title>
+	<link rel="stylesheet" href="CSS/main.css">
+	<link rel="stylesheet" href="CSS/music.css">
+	<script defer src="JS/music.js"></script>
+</head>
+
+
+<body>
+	<!--This is the main box, everything is inside
+	
+	This is the title-->
+	<header>
+			
+		<nav>
+		<div class=nav-box>
+		<h3 class=title-header>Expression Ministry</h3>
+		<div class=nav-container>
+		<img class=nav-img src="Images/ExpressionLogoNav.png" alt="Logo Image">
+		
+		<!-- This contains the links for every main page-->
+		<ul class=nav-list>
+			<li><a class=nav-buttonb href="fisher-index.html">Home</a></li>
+			<li><a class=nav-buttonb href="products.html">Products</a></li>
+			<li><a class=nav-buttonb href="orders.html">Orders</a></li>
+			<li><a class=nav-buttonb href="about-me.html">About Me</a></li>
+			<li><a class=nav-buttonb href="about-ministry.html">About Ministry</a></li>
+			<li><a class=nav-buttonb href="contact.html">Contact</a></li>
+			<li><a class=nav-buttonb href="projects.html">Projects</a></li>
+		</ul>
+		</div>
+		</div>
+		</nav>
+		
+	</header>
+	
+	<!--Title of Page -->
+	<div class=orange-space>
+	<h1 class=main-heading>Music</h1>
+	</div>
+
+	<!--Space-->
+	<div class=white-space></div>
+	
+	<!--Album Information-->
+	<div class=light-space>
+		<div class=album-grid>
+		
+		<div class=album-title-box>
+		<h1 class=album-title></h1>
+		</div>
+		
+		<div class=album-information>
+		<p class=album-desc></p>
+		</div>
+		
+		<div class=album-list>
+		<p class=album-song-list></p>
+		</div>
+		
+		<div class=album-cover>
+			<img class=album-cover-img src="">
+		</div>
+		<div class=album-btns>
+			<!--<button class=album-purchase onclick="purchase('.album-purchase')">Purchase</button>-->
+			<audio class=album-listen controls>
+				<source src="Audio/sample-song.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		</div>
+	
+	</div>
+	<div class="hide now">
+		<div class=white-space></div>
+	</div>
+	
+	
+	
+	<!--Music Display Options 1-->
+	<div class=light-space>
+	<h1 class=second-heading>Section 1</h1>
+	</div>
+	
+	<!--Album Carousel-->
+		<div class="carousel-fade">
+		<div class="carousel-content">
+
+		<div class="carousel-item active">
+			<img class=album-img src="Images/Album1.jpg" alt="Product Albulm 1">
+			<div class=album-txt>
+			<h1 class=album-text>FreshNewMorning</h1>
+			<button class=album-btn onclick="openAlbum(1)">Explore</button>
+			</div>
+		</div>
+		
+		<div class="carousel-item next">
+			<img class=album-img src="Images/Album2.jpg" alt="Product Albulm 2">
+			<div class=album-txt>
+			<h1 class=album-text>None Like You</h1>
+			<button class=album-btn onclick="openAlbum(2)">Explore</button>
+			</div>
+		</div>
+		
+		<div class="carousel-item">Album 3</div>
+		<div class="carousel-item">Album 4</div>
+		<div class="carousel-item">Album 5</div>
+		<div class="carousel-item prev">Album 6</div>
+		</div>
+	
+		<div class=album-arrows>
+			<button class="carousel-arrow" onclick="plusSlides(-1)">&#10094;</button>
+			<button class="carousel-arrow" onclick="plusSlides(1)">&#10095;</button>
+		</div>
+		</div>
+		
+	<div class=white-space></div>	
+	<!--Music Display Options 2-->
+	<div class=light-space>
+	<h1 class=second-heading>Section 2</h1>
+	</div>
+	
+	<!--Album Scroll-->
+		<div class=light-space>
+		<div class=album-box>
+		
+		<div class=album>
+			<img class=album-img src="Images/Album1.jpg" alt="Product Albulm 1">
+			<div class=album-txt>
+			<h1 class=album-text>FreshNewMorning</h1>
+			<button class=album-btn>Explore</button>
+			</div>
+		</div>
+		
+		<div class=album>Album 2</div>
+		<div class=album>Album 3</div>
+		<div class=album>Album 4</div>
+		<div class=album>Album 5</div>
+		<div class=album>Album 6</div>
+		</div>
+		</div>
+	
+	<div class=white-space></div>
+	
+	<!--Music Display Options 3-->
+	<div class=light-space>
+	<h1 class=second-heading>Section 3</h1>
+	</div>
+	
+	<div class=white-space></div>
+	
+	<!--Album Default-->
+	<div class=light-space>
+		<div class=albums>
+		<img class=album-img src="Images/Album2.jpg" alt="Product Albulm 1">
+		<div class=album-txt>
+		<h1 class=album-text>FreshNewMorning</h1>
+		<button class=album-btn>Explore</button>
+		</div>
+		
+		</div>
+		<div class=albums>Album 2</div>
+		<div class=albums>Album 3</div>
+		<div class=albums>Album 4</div>
+		<div class=albums>Album 5</div>
+	</div>
+	
+	
+
+	
+</body>

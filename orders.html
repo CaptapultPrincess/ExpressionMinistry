@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Jehanna Fisher
+	 developer: jsfisher4@eagles.usi.edu, last updated 10/26/25 -->
+
+
+<head>
+	<meta charset="utf-8" />
+	<title>Expression Ministry</title>
+	<link rel="stylesheet" href="CSS/main.css">
+	<link rel="stylesheet" href="CSS/orders.css">
+</head>
+
+
+
+<body>
+	<!--This is the main box, everything is inside-->
+	<header>
+		<nav>
+		
+		<div class=nav-box>
+		<h3 class=title-header>Expression Ministry</h3>
+		<div class=nav-container>
+		<img class=nav-img src="Images/ExpressionLogoNav.png" alt="Logo Image">
+		
+		<!--This contains all the links for the main pages-->
+		<ul class=nav-list>
+			<li><a class=nav-buttonb href="fisher-index.html">Home</a></li>
+			<li><a class=nav-buttonb href="products.html">Products</a></li>
+			<li><a class=nav-buttonb href="orders.html">Orders</a></li>
+			<li><a class=nav-buttonb href="about-me.html">About Me</a></li>
+			<li><a class=nav-buttonb href="about-ministry.html">About Ministry</a></li>
+			<li><a class=nav-buttonb href="contact.html">Contact</a></li>
+			<li><a class=nav-buttonb href="projects.html">Projects</a></li>
+		</ul>
+		
+		</div>
+		</nav>
+	</header>
+	
+	<div class=orange-space>
+	<h1 class=main-heading>Order</h1>
+	</div>
+	
+	<p>Use this page to order items on the website. Make sure that you enter all the information correctly. If you do not enter the information correctly, then you won't be able to submit the form. Pay attention to the information provided on each question.</p>
+
+	
+	<!--Personal Information Fieldset-->
+	<fieldset>
+	<legend>Personal Information</legend>
+	<label for="fname">First Name</label>
+	<input name="fname" type="text" class="form" placeholder="Enter Your First Name"/>
+	<label for="lname">Last Name</label>
+	<input name="lname" type="text" class="form" placeholder="Enter Your Last Name"/>
+	<label for="address">Address</label>
+	<textarea name="address" class="form" placeholder="Enter Your Address"></textarea>
+	<label for="email">Email</label>
+	<input name="email" type="email" class="form" placeholder="example.email@gmail.com"/>
+	<label for="phone">Phone</label >
+	<input name="phone" type="tel" class="form" placeholder="XXX-XXX-XXXX"/>
+	<p>Receive Emails/Text From Expression Ministry </p>
+	<input type="checkbox" name="test">Email</input>
+	<input type="checkbox" name="test">Text</input>
+	<input type="checkbox" name="test">Mail</input>	
+	</fieldset>
+	
+	<!--Orderr Information Fieldset-->
+	<fieldset>
+	<legend>Order Information</legend>
+	<label for="product">Choose A Product</label>
+	<select name="product" class="form">
+		<option>$19.99 [ Fresh New Morning (Album) ]</option>
+		<option>$14.99 [ None Like YOU (Album) ]</option>
+		<option>$12.99 [ Without You (Album) ]</option>
+		<option>$9.99  [ I am the World (Single) ] </option>
+		<option>$4.99  [ Taken From War (Single) ]</option>
+		<option>$29.99 [ Expression Poster ]</option>
+		<option>$59.99 [ Expression Hoodie ] </option>
+		<option>$19.99 [ Expression Cap ] </option>
+		<option>$24.99 [ Expression T-Shirt (White) ] </option>
+		<option>$24.99 [ Expression T-Shirt (Black) ]</option>
+	</select>
+	<label for="quantity">Quantity</label>
+	<input name="quantity" type="number" class="form" placeholder="Enter Quantity"/>
+	<p>Transportation Method</p>
+	<input type="radio" name="method">Pickup</input>
+	<input type="radio" name="method">Delivery</input>
+	</fieldset>
+	
+	
+	<!--Payment Informtion Fieldset-->
+	<fieldset>
+	<legend>Payment Information</legend>
+	<label for="card-name">Name On Card</label>
+	<input name="card-name" type="text" class="form" placeholder="Enter Name"/>
+	<label for="card-num">Card Number</label>
+	<input name="card-num" type="text" class="form" placeholder="Enter Card Number"/>
+	<label for="exp-date">Expiration Date</label>
+	<input name="exp-date" type="text" class="form" placeholder="MM/YY"/>
+	<label for="sec-code">Security Code</label>
+	<input name="sec-code" type="text" class="form" placeholder="CVC"/>
+	<p>Payment Method</p>
+	<input type="radio" name="method">Debit or Credit Card</input>
+	<input type="radio" name="method">PayPal</input>
+	</fieldset>	
+	
+</body>
